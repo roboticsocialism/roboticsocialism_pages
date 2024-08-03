@@ -1,146 +1,62 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Robotics</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Portal Tech Co.</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Header -->
-    <header>
+    <div class="video-background">
+        <video autoplay loop muted playsinline>
+            <!-- <source src="path-to-your-video.mp4" type="video/mp4"> -->
+            <source src="robotics.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="content-overlay">
         <div class="container">
-            <div class="logo">
-                <h1>Social Robotics</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#home">主頁</a></li>
-                    <li><a href="#about">關於我們</a></li>
-                    <li><a href="#services">服務</a></li>
-                    <li><a href="#cases">案例</a></li>
-                    <li><a href="#blog">部落格</a></li>
-                    <li><a href="#contact">聯繫我們</a></li>
-                </ul>
-            </nav>
+            <header>
+                <h1>Portal Tech Co.</h1>
+                <p>CHOOSE A CATEGORY</p>
+            </header>
+            <main>
+                <div class="category-grid">
+                    <div class="category-item">
+                        <i class="fas fa-print"></i>
+                        <p>Printers</p>
+                    </div>
+                    <div class="category-item">
+                        <i class="fas fa-desktop"></i>
+                        <p>Monitors</p>
+                    </div>
+                    <div class="category-item">
+                        <i class="fas fa-headphones"></i>
+                        <p>Headsets</p>
+                    </div>
+                    <div class="category-item">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>Storage</p>
+                    </div>
+                    <div class="category-item">
+                        <i class="fas fa-microchip"></i>
+                        <p>Processors</p>
+                    </div>
+                    <div class="category-item">
+                        <i class="fas fa-mouse"></i>
+                        <p>Mouse</p>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </footer>
         </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <h2>塑造未來的智慧夥伴</h2>
-            <p>我們的AI助理和機器人協助人們提升工作效率，提供量身定制的解決方案</p>
-            <a href="#services" class="btn">瞭解更多</a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>關於我們</h2>
-            <p>Social Robotics致力於開發先進的AI和機器人技術，為社會帶來積極影響。我們的目標是創造能夠與人類和諧共處、促進社會進步的智能系統。</p>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2>我們的服務</h2>
-            <div class="service-list">
-                <div class="service">
-                    <h3>AI助理開發</h3>
-                    <p>提供先進的AI助理開發服務，提升工作效率和生活品質。</p>
-                </div>
-                <div class="service">
-                    <h3>機器人製造</h3>
-                    <p>專業的機器人製造服務，適應各種應用場景，促進社會發展。</p>
-                </div>
-                <div class="service">
-                    <h3>客製化AI解決方案</h3>
-                    <p>根據客戶需求提供量身打造的AI解決方案，解決特定問題。</p>
-                </div>
-                <div class="service">
-                    <h3>維護和支援服務</h3>
-                    <p>提供全面的維護和支援服務，確保系統穩定運行並持續優化。</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Case Studies Section -->
-    <section id="cases" class="cases">
-        <div class="container">
-            <h2>成功案例</h2>
-            <div class="case-list">
-                <div class="case">
-                    <h3>智慧城市管理系統</h3>
-                    <p>為某大型城市開發的AI輔助決策系統，優化資源分配，提升市民生活品質。</p>
-                </div>
-                <div class="case">
-                    <h3>醫療輔助機器人</h3>
-                    <p>協助醫護人員的智能機器人，提高診斷準確率，減輕醫護人員工作負擔。</p>
-                </div>
-                <div class="case">
-                    <h3>教育AI助理</h3>
-                    <p>為教育機構開發的AI輔導系統，根據學生個體差異提供個性化學習方案。</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Blog Section -->
-    <section id="blog" class="blog">
-        <div class="container">
-            <h2>最新動態</h2>
-            <div class="blog-list">
-                <article>
-                    <h3>AI倫理與社會責任</h3>
-                    <p>探討AI技術發展中的倫理問題及我們的社會責任。</p>
-                </article>
-                <article>
-                    <h3>機器人技術的未來展望</h3>
-                    <p>分析機器人技術的發展趨勢及其對未來社會的影響。</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>聯繫我們</h2>
-            <form action="submit_form.php" method="post">
-                <div class="form-group">
-                    <label for="name">姓名</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">電子郵件</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">訊息</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <button type="submit" class="btn">提交</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-links">
-                <a href="#home">主頁</a>
-                <a href="#about">關於我們</a>
-                <a href="#services">服務</a>
-                <a href="#cases">案例</a>
-                <a href="#blog">部落格</a>
-                <a href="#contact">聯繫我們</a>
-            </div>
-            <p>© 2024 Social Robotics. All rights reserved.</p>
-        </div>
-    </footer>
+    </div>
 </body>
 </html>
