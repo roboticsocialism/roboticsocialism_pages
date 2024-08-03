@@ -1,8 +1,120 @@
 <!DOCTYPE html>
+<html lang="zh-TW">
 <head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socialist Robotics</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>Hello hi!!!.....</h1>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Socialist Robotics</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">主頁</a></li>
+                    <li><a href="#about">關於我們</a></li>
+                    <li><a href="#services">服務</a></li>
+                    <li><a href="#cases">案例</a></li>
+                    <li><a href="#blog">部落格</a></li>
+                    <li><a href="#contact">聯繫我們</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>改變未來的智能助手</h2>
+            <p>我們的AI代理和機器人幫助人們提升工作效率，提供定制化解決方案</p>
+            <a href="#services" class="btn">了解更多</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>我們的服務</h2>
+            <div class="service-list">
+                <div class="service">
+                    <h3>AI代理開發</h3>
+                    <p>提供先進的AI代理開發服務，提升工作效率。</p>
+                </div>
+                <div class="service">
+                    <h3>機器人製造</h3>
+                    <p>專業的機器人製造服務，適應各種應用場景。</p>
+                </div>
+                <div class="service">
+                    <h3>定制化AI解決方案</h3>
+                    <p>根據客戶需求提供量身定制的AI解決方案。</p>
+                </div>
+                <div class="service">
+                    <h3>維護和支援服務</h3>
+                    <p>提供全面的維護和支援服務，確保系統穩定運行。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="cases" class="cases">
+        <div class="container">
+            <h2>成功案例</h2>
+            <div class="case-list">
+                <div class="case">
+                    <h3>案例一</h3>
+                    <p>簡短描述案例一。</p>
+                </div>
+                <div class="case">
+                    <h3>案例二</h3>
+                    <p>簡短描述案例二。</p>
+                </div>
+                <div class="case">
+                    <h3>案例三</h3>
+                    <p>簡短描述案例三。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>聯繫我們</h2>
+            <form action="submit_form.php" method="post">
+                <div class="form-group">
+                    <label for="name">姓名</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">電子郵件</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">訊息</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">提交</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#home">主頁</a>
+                <a href="#services">服務</a>
+                <a href="#cases">案例</a>
+                <a href="#blog">部落格</a>
+                <a href="#contact">聯繫我們</a>
+            </div>
+            <p>© 2024 Socialist Robotics. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
+</html>
