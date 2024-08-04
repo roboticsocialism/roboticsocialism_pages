@@ -17,7 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "react-scripts build && cp -Rf build /Users/richard/Documents/roboticsocialism_pages && git add . && git commit -m 'new' && git push"
+    "deploy": "react-scripts build && cp -Rf build /Users/richard/Documents/roboticsocialism_pages && cd .. && git add . && git commit -m 'new' && git push"
   },
   "eslintConfig": {
     "extends": [
