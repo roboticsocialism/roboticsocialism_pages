@@ -4,13 +4,24 @@
 // I wanna revise this script to move the video to uppper banner
 
 
-import React from 'react';
+import React, { useState }  from 'react';
 import './LandingPage.css';
 import backgroundSheet from "./robotics480.mp4";
+import playVideo from "./video&audio.mp4"
+import Modal from 'react-modal';
+Modal.setAppElement('#root');
 
 
 const LandingPage = () => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
 
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
   return (
     <div>
       <div className='video-container'>
@@ -25,9 +36,8 @@ const LandingPage = () => {
       <div className="content-overlay">
         <div className="container">
           <header>
-            <h1>社會機器人會社</h1>
-            <p>AI Autonoumous & Automation Agency</p>
-            <p>在此為您服務!!!!!</p>
+            <h2>社會機器人會社</h2>
+            <h1><p>AI Autonoumous & Automation Agency</p></h1>
           </header>
           <main>
             <div className="category-grid">
@@ -43,13 +53,28 @@ const LandingPage = () => {
                 <i className="fas fa-headphones"></i>
                 <p>機器人力資源</p>
               </div>
-              <div className="category-item">
+              <div className="category-item" onClick={openModal}>
                 <i className="fas fa-cloud-upload-alt"></i>
-                <p>社會主義</p>
+              {/* <button onClick={openModal}>Play Video</button> */}
+
+              <p>UBI</p>
               </div>
+              <Modal
+                    isOpen={modalIsOpen}
+                    onRequestClose={closeModal}
+                    contentLabel="Video Modal"
+                    className="Modal"
+                    overlayClassName="Overlay"
+                  >
+                    <button onClick={closeModal}>Close</button>
+                    <video width="100%" controls autoPlay>
+                      <source src={playVideo} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </Modal>
               <div className="category-item">
                 <i className="fas fa-microchip"></i>
-                <p>具身智能</p>
+                <p>具身</p>
               </div>
               <div className="category-item">
                 <i className="fas fa-mouse"></i>

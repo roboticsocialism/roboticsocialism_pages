@@ -8,7 +8,8 @@ body {
   .video-container {
     position: fixed;
     width: 100%;
-    height: 50%;
+    /* height: 50%; */
+    height: 100%;
   }
 
   /* .video-background {
@@ -38,7 +39,7 @@ body {
   
 
   .content-overlay {
-    margin-top: 25%;
+    /* margin-top: 25%; */
     position: relative;
     z-index: 1;
   }
@@ -49,7 +50,8 @@ body {
   }
   
   header {
-    background-color: rgba(51, 51, 51, 0.8);
+    /* background-color: rgba(51, 51, 51, 0.8); */
+    background-color: rgba(51, 51, 51, 0.3);
     color: #fff;
     padding: 1rem 0;
   }
@@ -62,7 +64,8 @@ body {
   }
   
   .category-item {
-    background-color: rgba(255, 255, 255, 0.8);
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    background-color: rgba(255, 255, 255, 0.3);
     padding: 1rem;
     border-radius: 5px;
     text-align: center;
@@ -98,3 +101,28 @@ body {
     color: #ddd;
   }
   
+
+  
+.Modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 80%;
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
