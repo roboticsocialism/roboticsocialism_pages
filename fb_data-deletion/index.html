@@ -1,50 +1,41 @@
-<!DOCTYPE html>
-<html lang="zh-TW">
+<!doctype html>
+<html lang="zh-Hant-TW">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>使用者資料刪除說明 - Robotic Social</title>
-    <meta name="description" content="Facebook登入資料刪除說明" />
-    <script type="text/javascript">
-      // Redirect to React app
-      window.location.replace("/fb_data-deletion");
-    </script>
+    <meta name="description" content="Robotic Social Facebook Login 資料刪除相容頁面。" />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://www.robotic.social/data-deletion/" />
+    <title>資料刪除說明 Data Deletion Instructions | Robotic Social</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        max-width: 800px;
-        margin: 50px auto;
-        padding: 20px;
-        line-height: 1.6;
-      }
-      h1 {
-        color: #333;
-      }
-      .step {
-        margin: 20px 0;
-        padding: 15px;
-        background: #f5f5f5;
-        border-radius: 8px;
-      }
+      :root { color-scheme:light; --ink:#182019; --muted:#5d675f; --line:#d9dfda; --paper:#fffdf8; --wash:#f4f1e8; --accent:#315c43; --accent-soft:#e7eee9; }
+      * { box-sizing:border-box; }
+      body { margin:0; background:var(--wash); color:var(--ink); font-family:"Noto Serif TC","Songti TC","PMingLiU",serif; line-height:1.8; }
+      main { width:min(860px,calc(100% - 32px)); margin:32px auto; background:var(--paper); border:1px solid var(--line); border-radius:18px; padding:clamp(24px,5vw,52px); }
+      .eyebrow { color:var(--accent); font:700 12px/1.4 system-ui,sans-serif; letter-spacing:.12em; text-transform:uppercase; }
+      h1,h2 { line-height:1.3; } h1 { font-size:clamp(30px,5vw,46px); }
+      p,li { font-size:17px; } .meta { color:var(--muted); }
+      .callout { margin:24px 0; padding:18px 20px; border-left:4px solid var(--accent); background:var(--accent-soft); }
+      a { color:var(--accent); text-underline-offset:3px; }
+      @media (max-width:560px) { main { width:100%; margin:0; border:0; border-radius:0; min-height:100vh; } p,li { font-size:16px; } }
     </style>
   </head>
   <body>
-    <h1>🗑️ 使用者資料刪除說明</h1>
+    <main>
+      <p class="eyebrow">Robotic Social / 藏家園地</p>
+      <h1>資料刪除說明 <span lang="en">Data Deletion Instructions</span></h1>
+      <p class="meta">最後更新 / Last updated：2026-08-11</p>
+      <div class="callout"><strong>相容網址：</strong>本頁保留給既有 Facebook／Meta 設定。完整且目前有效的刪除說明位於 <a href="https://www.robotic.social/data-deletion/">https://www.robotic.social/data-deletion/</a>。本頁不使用 JavaScript redirect。</div>
 
-    <p>
-      若您希望刪除透過 Facebook 登入所建立的帳號及相關資料，請依下列方式申請：
-    </p>
-
-    <div class="step">
-      <h3>1. 請聯絡管理員</h3>
-      <p>並於訊息中提供您使用 Facebook 登入時的姓名與電子郵件地址。</p>
-    </div>
-
-    <div class="step">
-      <h3>2. 處理時間</h3>
-      <p>我們將於 7 個工作天內完成資料刪除並回覆通知。</p>
-    </div>
-
-    <p><a href="/">返回首頁</a></p>
+      <h2>刪除申請方式</h2>
+      <p>在 Facebook 設定中移除本應用程式通常會停止後續授權，但不一定會刪除 Robotic Social 先前已保存的帳戶或個人資料。</p>
+      <ol>
+        <li>寄信至 <a href="mailto:waneyvin.desktop@gmail.com">waneyvin.desktop@gmail.com</a>，主旨註明「Robotic Social 資料刪除申請 / Data Deletion Request」。</li>
+        <li>提供您在 Robotic Social 使用的顯示名稱、Facebook Login／帳戶電子郵件（如有）及其他足以定位帳戶的非敏感資訊。</li>
+        <li>我們可能進行合理的身分核對，以避免未經授權的刪除。</li>
+      </ol>
+      <p>收到足以辨識並核對帳戶的完整申請後，我們通常會於 <strong>7 個工作天</strong>內完成刪除或回覆處理狀態，並在完成後盡可能通知申請人；依法或基於必要安全目的須保存的資料可能例外保留。</p>
+      <p>完整隱私說明請見 <a href="https://www.robotic.social/privacy/">隱私權政策 / Privacy Policy</a>。</p>
+    </main>
   </body>
 </html>
